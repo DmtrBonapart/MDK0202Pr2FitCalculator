@@ -7,19 +7,28 @@
     <link rel="stylesheet" href="../Style/Global/variables.css">
     <link rel="stylesheet" href="../Style/Global/fonts.css">
     <link rel="stylesheet" href="../Style/Global/base.css">
+    <link rel="stylesheet" href="../Style/UI/buttons.css">
     <link rel="stylesheet" href="../Style/Layouts/header.css">
     <link rel="stylesheet" href="../Style/Layouts/footer.css">
+    <link rel="stylesheet" href="../Style/Components/login-form.css">
     <script src="../Components/header.js"></script>
     <script src="../Components/footer.js"></script>
+    <script src="../Components/login-form.js"></script>
+    <style>
+        main {
+        min-height: calc(100vh - 64px - 120px);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 120px 0;
+    }
+    </style>
 </head>
 <body>
     <my-header></my-header>
     
     <main>
-        <div class="container">
-            <h1>Вход</h1>
-            <p>Страница входа</p>
-        </div>
+        <login-form></login-form>
     </main>
     
     <my-footer></my-footer>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../Style/Global/variables.css">
     <link rel="stylesheet" href="../Style/Global/fonts.css">
     <link rel="stylesheet" href="../Style/Global/base.css">
+    <link rel="stylesheet" href="../Style/UI/buttons.css">
     <link rel="stylesheet" href="../Style/Layouts/header.css">
     <link rel="stylesheet" href="../Style/Layouts/footer.css">
     <link rel="stylesheet" href="../Style/Landing/hero.css">
@@ -25,8 +26,8 @@
                 <h1 class="hero-title">Рассчитай свой рацион за 5 минут</h1>
                 <p class="hero-subtitle">Внесите свои продукты, и мы мгновенно посчитаем калории, белки, жиры и углеводы. Просто и удобно.</p>
                 <div class="hero-buttons">
-                    <button class="hero-btn-primary">Начать расчет</button>
-                    <button class="hero-btn-secondary">Узнать больше</button>
+                    <button class="btn btn-primary btn-medium">Начать расчет</button>
+                    <button class="btn btn-secondary btn-medium">Узнать больше</button>
                 </div>
             </div>
             <div class="hero-image">
@@ -97,8 +98,8 @@
                 <h2 class="cta-title">Готовы начать свой путь к здоровью?</h2>
                 <p class="cta-subtitle">Присоединяйтесь к тысячам пользователей уже сегодня</p>
                 <div class="cta-buttons">
-                    <a href="signup.php"><button class="cta-btn-primary">Создать аккаунт бесплатно</button></a>
-                    <button class="cta-btn-secondary">Узнать больше</button>
+                    <a href="signup.php"><button class="btn btn-primary btn-large">Создать аккаунт бесплатно</button></a>
+                    <button class="btn btn-secondary btn-medium">Узнать больше</button>
                 </div>
             </div>
         </section>

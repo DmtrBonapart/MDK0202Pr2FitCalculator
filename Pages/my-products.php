@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../Style/Global/variables.css">
     <link rel="stylesheet" href="../Style/Global/fonts.css">
     <link rel="stylesheet" href="../Style/Global/base.css">
+    <link rel="stylesheet" href="../Style/UI/buttons.css">
     <link rel="stylesheet" href="../Style/Layouts/header.css">
     <link rel="stylesheet" href="../Style/Layouts/footer.css">
     <script src="../Components/header.js"></script>

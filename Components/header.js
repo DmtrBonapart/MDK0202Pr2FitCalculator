@@ -14,7 +14,7 @@ class HeaderComponent extends HTMLElement {
                     <div class="header-left">
                         <a href="landing.php" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
                             <div class="logo">
-                                <img src="../Images/logo.png" alt="FitCalculator logo" style="width: 100%; height: 100%; object-fit: contain;">
+                                <img src="../Images/logo.png" alt="FitCalculator logo">
                             </div>
                             <span class="logo-text">FitCalculator</span>
                         </a>
@@ -26,8 +26,8 @@ class HeaderComponent extends HTMLElement {
                         <a href="my-products.php" class="nav-item ${activePage === 'products' ? 'active' : ''}">Продукты</a>
                     </nav>
                     <div class="header-right">
-                        <a href="login.php"><button class="btn-login">Войти</button></a>
-                        <a href="signup.php"><button class="btn-register">Регистрация</button></a>
+                        <a href="login.php"><button class="btn btn-secondary btn-login">Войти</button></a>
+                        <a href="signup.php"><button class="btn btn-primary btn-register">Регистрация</button></a>
                     </div>
                 </div>
             </header>
