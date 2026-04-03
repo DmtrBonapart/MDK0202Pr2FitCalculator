@@ -1,0 +1,51 @@
+.btn {
+    height: 3rem; /* 48px */
+    border-radius: 0.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background: #4CAF50;
+    border: none;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #3d8b40;
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 0.0625rem solid #4CAF50;
+    color: #4CAF50;
+}
+
+.btn-large {
+    width: 17.5rem; /* 280px */
+}
+
+.btn-medium {
+    width: 12.5rem; /* 200px */
+}
+
+.btn-small {
+    width: 7.5rem; /* 120px */
+}
+
+.btn-login {
+    width: 6.25rem;
+    height: 2.5rem;
+}
+
+.btn-register {
+    width: 7.5rem;
+    height: 2.5rem;
+}
+
+.btn-full {
+    width: 30rem; /* 480px */
+}
