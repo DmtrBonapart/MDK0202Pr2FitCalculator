@@ -1,5 +1,4 @@
 <?php
-// Файл: Auth/login_process.php
 session_start();
 
 require_once '../Config/db_connect.php';

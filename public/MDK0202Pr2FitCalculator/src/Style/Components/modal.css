@@ -1,0 +1,17 @@
+/* Стили модальных окон */
+.modal { display:none; position:fixed; inset:0; z-index:500; }
+.modal.active { display:flex; align-items:center; justify-content:center; }
+.modal-overlay { position:absolute; inset:0; background:rgba(0,0,0,0.45); }
+.modal-box {
+    position:relative; z-index:1; background:var(--bg-white);
+    border-radius:var(--radius-xl); padding:2rem; width:100%; max-width:34rem;
+    box-shadow:var(--shadow-lg); max-height:90vh; overflow-y:auto;
+    animation:modalIn 0.2s ease;
+}
+@keyframes modalIn { from { opacity:0; transform:scale(0.95); } to { opacity:1; transform:scale(1); } }
+.modal-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem; }
+.modal-title { font-size:1.25rem; font-weight:600; color:var(--text-dark); }
+.modal-close { width:2rem; height:2rem; display:flex; align-items:center; justify-content:center; border:none; background:var(--bg-gray); border-radius:var(--radius-full); cursor:pointer; font-size:1.125rem; color:var(--text-medium); transition:background 0.15s; }
+.modal-close:hover { background:var(--border); }
+.modal-footer { display:flex; gap:0.75rem; margin-top:1.5rem; }
+.modal-footer .btn { flex:1; }

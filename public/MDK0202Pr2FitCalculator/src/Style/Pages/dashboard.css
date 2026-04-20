@@ -1,0 +1,188 @@
+/* Стили дашборда */
+.dashboard-layout { display:flex; }
+.dashboard-content { flex:1; }
+
+/* Заголовок дашборда */
+.dashboard-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem; }
+.dashboard-date { font-size:1.25rem; font-weight:600; color:var(--text-dark); }
+
+/* Строка с карточками */
+.cards-row { display:flex; gap:1.5rem; margin-bottom:1.5rem; flex-wrap:wrap; }
+
+/* Карточка прогресса */
+.progress-card { flex:1; min-width:15rem; max-width:22rem; }
+.progress-card-title { font-size:0.8125rem; font-weight:600; color:var(--text-light); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.75rem; }
+.progress-calories { display:flex; align-items:baseline; gap:0.375rem; margin-bottom:0.625rem; }
+.cal-current { font-size:2.25rem; font-weight:700; color:var(--green); }
+.cal-current.is-over { color:var(--red); }
+.cal-goal { font-size:1rem; color:var(--text-light); }
+.progress-bar-wrap { background:var(--border); height:0.5rem; border-radius:4px; overflow:hidden; margin-bottom:0.75rem; }
+.progress-bar-fill { background:var(--green); height:100%; border-radius:4px; transition:width 0.4s ease; }
+.progress-bar-fill.is-over { background:var(--red); }
+.macro-row { display:flex; gap:1rem; }
+.macro-item { font-size:0.8125rem; color:var(--text-medium); }
+.macro-item span { font-weight:600; color:var(--text-dark); }
+
+/* Карусель продуктов */
+.carousel-wrap { flex:1; min-width:18rem; position:relative; overflow:hidden; border-radius:var(--radius-lg); border:1px solid var(--border); background:var(--bg-white); box-shadow:var(--shadow-sm); }
+.carousel-label { font-size:0.75rem; font-weight:600; color:var(--text-light); text-transform:uppercase; letter-spacing:0.05em; padding:0.875rem 1.25rem 0; }
+.carousel-track { display:flex; transition:transform 0.35s ease; }
+.carousel-slide { min-width:100%; padding:0.75rem 3.5rem 1.25rem; }
+.carousel-slide-title { font-size:1.125rem; font-weight:700; color:var(--text-dark); margin-bottom:0.25rem; }
+.carousel-slide-kbju { font-size:0.8125rem; color:var(--text-medium); margin-bottom:0.875rem; }
+.carousel-controls { position:absolute; inset:0; pointer-events:none; }
+.carousel-btn { position:absolute; top:50%; transform:translateY(-50%); width:2.25rem; height:2.25rem; display:flex; align-items:center; justify-content:center; border:1px solid var(--border); border-radius:50%; background:var(--bg-white); cursor:pointer; font-size:1rem; color:var(--text-medium); transition:all 0.15s; pointer-events:auto; box-shadow:var(--shadow-sm); }
+.carousel-btn-prev { left:0.75rem; }
+.carousel-btn-next { right:0.75rem; }
+.carousel-btn:hover { background:var(--green); color:#fff; border-color:var(--green); }
+.carousel-dots { display:flex; gap:0.375rem; justify-content:center; padding:0 0 0.875rem; }
+.carousel-dot { width:0.5rem; height:0.5rem; border-radius:50%; background:var(--border); transition:background 0.2s; }
+.carousel-dot.active { background:var(--green); }
+
+@media (max-width: 640px) {
+    .carousel-slide { padding-left:2.75rem; padding-right:2.75rem; }
+    .carousel-btn-prev { left:0.5rem; }
+    .carousel-btn-next { right:0.5rem; }
+}
+
+@media (max-width: 860px) {
+    .dashboard-layout {
+        display: block;
+    }
+
+    .progress-card,
+    .carousel-wrap {
+        min-width: 0;
+        max-width: none;
+    }
+
+    .diary-table-header {
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+}
+
+/* Таблица дневника */
+.diary-table-wrap { background:var(--bg-white); border:1px solid var(--border); border-radius:var(--radius-lg); overflow-x:auto; overflow-y:hidden; box-shadow:var(--shadow-sm); }
+.diary-table-header { display:flex; justify-content:space-between; align-items:center; padding:1.125rem 1.5rem; border-bottom:1px solid var(--border); }
+.diary-table-title { font-size:1.0625rem; font-weight:600; color:var(--text-dark); }
+.delete-btn { background:none; border:none; cursor:pointer; color:var(--red); opacity:0.7; transition:opacity 0.15s; display:flex; align-items:center; }
+.delete-btn:hover { opacity:1; }
+
+/* Модалка добавления с выбором граммовки */
+.gram-modal-product { font-size:1rem; font-weight:600; color:var(--text-dark); margin-bottom:0.375rem; }
+.gram-modal-kbju { font-size:0.875rem; color:var(--text-medium); margin-bottom:1.25rem; }
+.gram-preview { margin-top:0.875rem; padding:0.875rem; background:var(--bg-gray); border-radius:var(--radius-md); font-size:0.9375rem; color:var(--text-dark); }
+
+@media (max-width: 550px) {
+    .diary-table-wrap .data-table { min-width:40rem; }
+}
+
+@media (max-width: 490px) {
+    .cards-row {
+        gap: 1rem;
+    }
+
+    .progress-card,
+    .carousel-wrap {
+        width: 100%;
+    }
+
+    .progress-card {
+        padding: 1rem;
+    }
+
+    .progress-card-title,
+    .carousel-label {
+        font-size: 0.75rem;
+    }
+
+    .progress-calories {
+        flex-wrap: wrap;
+        align-items:baseline;
+        row-gap: 0.25rem;
+    }
+
+    .cal-current {
+        font-size: 1.875rem;
+        line-height: 1;
+    }
+
+    .cal-goal {
+        font-size: 0.9375rem;
+    }
+
+    .macro-row {
+        flex-wrap: wrap;
+        gap: 0.5rem 0.875rem;
+    }
+
+    .macro-item {
+        font-size: 0.75rem;
+    }
+
+    .carousel-label {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .carousel-slide {
+        padding: 0.75rem 2.5rem 1rem;
+    }
+
+    .carousel-slide-title {
+        font-size: 1rem;
+        line-height: 1.3;
+        overflow-wrap: anywhere;
+    }
+
+    .carousel-slide-kbju {
+        font-size: 0.75rem;
+        line-height: 1.5;
+        word-break: break-word;
+    }
+
+    .carousel-slide .btn {
+        width: 100%;
+    }
+
+    .carousel-btn {
+        width: 2rem;
+        height: 2rem;
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .progress-card {
+        padding: 0.875rem;
+    }
+
+    .cal-current {
+        font-size: 1.625rem;
+    }
+
+    .cal-goal,
+    .macro-item,
+    .carousel-slide-kbju {
+        font-size: 0.6875rem;
+    }
+
+    .carousel-slide {
+        padding-left: 2.25rem;
+        padding-right: 2.25rem;
+    }
+
+    .carousel-slide-title {
+        font-size: 0.9375rem;
+    }
+
+    .carousel-btn-prev {
+        left: 0.375rem;
+    }
+
+    .carousel-btn-next {
+        right: 0.375rem;
+    }
+}

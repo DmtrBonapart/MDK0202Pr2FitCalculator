@@ -1,0 +1,10 @@
+/* Стили таблиц */
+.data-table { width:100%; border-collapse:collapse; }
+.data-table th {
+    background:var(--bg-gray); padding:0.75rem 1rem;
+    text-align:left; font-size:0.875rem; font-weight:600; color:var(--text-dark);
+    border-bottom:1px solid var(--border);
+}
+.data-table td { padding:0.875rem 1rem; font-size:1rem; color:var(--text-dark); border-bottom:1px solid var(--border); }
+.data-table tr:last-child td { border-bottom:none; background:var(--bg-gray); font-weight:600; }
+.data-table tr:hover td { background:rgba(76,175,80,0.03); }

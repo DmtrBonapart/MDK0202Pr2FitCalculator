@@ -1,0 +1,43 @@
+/* Стили кнопок */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    border-radius: var(--radius-md);
+    font-family: var(--font);
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+}
+.btn-primary  { background:var(--green);       color:#fff;           }
+.btn-primary:hover  { background:var(--green-dark); }
+.btn-secondary { background:#fff; border:1px solid var(--green); color:var(--green); }
+.btn-secondary:hover { background:var(--green-light); }
+.btn-danger   { background:var(--red); color:#fff; }
+.btn-danger:hover   { background:#c62828; }
+.btn-ghost    { background:transparent; border:1px solid var(--border); color:var(--text-medium); }
+.btn-ghost:hover    { border-color:var(--border-hover); }
+
+.btn-full  { width:100%; }
+.btn-large { width:17.5rem; }
+.btn-medium{ width:12.5rem; }
+.btn-small { width:7.5rem; }
+.btn-icon  { width:2.5rem; height:2.5rem; padding:0; border-radius:var(--radius-md); }
+
+.btn-login    { min-width:6rem;   height:2.5rem; padding:0 1rem; background:transparent; border:1px solid var(--green); color:var(--green); border-radius:var(--radius-md); font-family:var(--font); cursor:pointer; }
+.btn-register { min-width:8.5rem; height:2.5rem; padding:0 1rem; background:var(--green); color:#fff; border:none; border-radius:var(--radius-md); font-family:var(--font); cursor:pointer; }
+.btn-login:hover    { background:var(--green-light); }
+.btn-register:hover { background:var(--green-dark); }
+
+@media (max-width: 700px) {
+    .btn-large,
+    .btn-medium,
+    .btn-small {
+        width: auto;
+        min-width: 0;
+        padding: 0 1.25rem;
+    }
+}

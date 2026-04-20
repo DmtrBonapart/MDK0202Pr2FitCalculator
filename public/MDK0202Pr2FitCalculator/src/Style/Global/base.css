@@ -1,0 +1,57 @@
+/* Базовые стили: сброс, типографика, утилиты */
+* { margin:0; padding:0; box-sizing:border-box; }
+
+html {
+    font-size:16px;
+    /* чтобы хедер не "прыгал" вправо/влево из-за появления скроллбара */
+    overflow-y: scroll;
+}
+
+body {
+    font-family: var(--font);
+    color: var(--text-dark);
+    background: var(--bg-white);
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* хедер фиксированный, поэтому даю отступ сверху для всех страниц */
+    padding-top: var(--header-h);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* оставляю main без дополнительного отступа — его уже даёт body */
+main { flex:1; }
+
+h1 { font-size:2rem;    font-weight:700; margin-bottom:1.5rem; }
+h2 { font-size:1.5rem;  font-weight:600; margin-bottom:1rem; }
+h3 { font-size:1.125rem; font-weight:500; margin-bottom:0.75rem; }
+p  { font-size:1rem;    margin-bottom:1rem; color:var(--text-medium); }
+
+a { text-decoration:none; color:inherit; }
+
+.container { max-width:var(--container-w); margin:0 auto; padding:0 2rem; width:100%; }
+.link-green { color:var(--green); font-weight:600; }
+.link-green:hover { text-decoration:underline; }
+.link-blue  { color:var(--blue); }
+.link-blue:hover { text-decoration:underline; }
+
+@media (max-width: 1024px) {
+    body {
+        padding-top: 7rem;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        padding-top: 8.5rem;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+}

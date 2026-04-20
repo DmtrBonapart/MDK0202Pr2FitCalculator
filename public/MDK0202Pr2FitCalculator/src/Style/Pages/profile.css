@@ -1,0 +1,8 @@
+/* Стили страницы профиля */
+.profile-layout { max-width:48rem; }
+.profile-form { display:flex; flex-direction:column; gap:0; }
+.profile-section-title { font-size:1.125rem; font-weight:600; color:var(--text-dark); margin:1.5rem 0 1rem; }
+.profile-section-title:first-child { margin-top:0; }
+.form-row { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+.form-group { display:flex; flex-direction:column; gap:0.375rem; margin-bottom:1rem; }
+.form-label { font-size:0.875rem; font-weight:500; color:var(--text-medium); }

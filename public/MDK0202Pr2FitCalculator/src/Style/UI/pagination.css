@@ -1,0 +1,10 @@
+/* Стили пагинации */
+.pagination { display:flex; gap:0.5rem; justify-content:center; margin-top:1.5rem; }
+.page-btn {
+    width:2.25rem; height:2.25rem; display:flex; align-items:center; justify-content:center;
+    border:1px solid var(--border); border-radius:var(--radius-md);
+    font-family:var(--font); font-size:0.875rem; color:var(--text-medium);
+    cursor:pointer; background:var(--bg-white); transition:all 0.2s;
+}
+.page-btn:hover { border-color:var(--green); color:var(--green); }
+.page-btn.active { background:var(--green); color:#fff; border-color:var(--green); }

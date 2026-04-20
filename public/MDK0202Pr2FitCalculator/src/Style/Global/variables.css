@@ -1,0 +1,35 @@
+/* CSS-переменные — единый источник цветов и размеров для всего проекта */
+:root {
+    --green:        #4CAF50;
+    --green-dark:   #3d8b40;
+    --green-light:  rgba(76,175,80,0.1);
+    --blue:         #2196F3;
+    --red:          #F44336;
+    --orange:       #FF9800;
+
+    --text-dark:    #333333;
+    --text-medium:  #666666;
+    --text-light:   #999999;
+
+    --border:       #E0E0E0;
+    --border-hover: #BDBDBD;
+    --bg-white:     #FFFFFF;
+    --bg-gray:      #F5F5F5;
+    --bg-footer:    #F8F9FA;
+
+    --font:         'Inter', sans-serif;
+
+    --shadow-sm:    0 2px 4px rgba(0,0,0,0.08);
+    --shadow-md:    0 4px 12px rgba(0,0,0,0.12);
+    --shadow-lg:    0 8px 24px rgba(0,0,0,0.16);
+
+    --radius-sm:    4px;
+    --radius-md:    8px;
+    --radius-lg:    12px;
+    --radius-xl:    16px;
+    --radius-full:  50%;
+
+    --header-h:     64px;
+    --sidebar-w:    260px;
+    --container-w:  1280px;
+}

@@ -1,0 +1,14 @@
+/* Стили встроенного календаря в сайдбаре */
+.cal-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:0.625rem; }
+.cal-title { font-size:0.875rem; font-weight:600; color:var(--text-dark); }
+.cal-nav { width:1.75rem; height:1.75rem; display:flex; align-items:center; justify-content:center; border:none; background:none; cursor:pointer; border-radius:var(--radius-md); color:var(--text-medium); font-size:1rem; transition:background 0.15s; }
+.cal-nav:hover { background:var(--bg-gray); }
+.cal-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:0.125rem; }
+.cal-day-name { text-align:center; font-size:0.6875rem; font-weight:600; color:var(--text-light); padding:0.25rem 0; }
+.cal-cell { text-align:center; font-size:0.8125rem; padding:0.3125rem 0; border-radius:var(--radius-sm); cursor:pointer; color:var(--text-dark); transition:background 0.15s; }
+.cal-cell:hover { background:var(--bg-gray); }
+.cal-empty { cursor:default; }
+.cal-empty:hover { background:none; }
+.cal-today { font-weight:700; color:var(--green); }
+.cal-selected { background:var(--green) !important; color:#fff !important; border-radius:var(--radius-full); }
+.cal-weekend { color:var(--red); }

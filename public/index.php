@@ -1,4 +1,4 @@
 <?php
-//перенаправляю на landing.php
-header('Location: MDK0202Pr2FitCalculator/Pages/landing.php');
+//точка входа — сразу кидаю на лендинг
+header('Location: MDK0202Pr2FitCalculator/src/Pages/landing.php');
 exit;

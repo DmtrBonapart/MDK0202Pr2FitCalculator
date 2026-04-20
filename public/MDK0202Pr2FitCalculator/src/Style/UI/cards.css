@@ -1,0 +1,9 @@
+/* Стили карточек */
+.card {
+    background:var(--bg-white);
+    border:1px solid var(--border);
+    border-radius:var(--radius-lg);
+    padding:1.25rem;
+    box-shadow:var(--shadow-sm);
+}
+.card-hover:hover { box-shadow:var(--shadow-md); transform:translateY(-2px); transition:all 0.2s; }
